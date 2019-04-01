@@ -7,7 +7,8 @@ module.exports = {
     mode: "development",
     entry: "./lib/app.ts",
     output: {
-        filename: "/dist/app.js"
+        dir: "dist",
+        filename: "app.js"
     },
     // Currently we need to add '.ts' to the resolve.extensions array.
     resolve: {

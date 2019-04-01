@@ -5,7 +5,7 @@
     "main": "lib/app.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc --outFile dist/app.js lib/app.ts "
+        "build": "tsc --sourcemap  --outFile dist/app.js lib/app.ts "
     },
     "repository": {
         "type": "git",
