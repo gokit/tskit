@@ -5,7 +5,8 @@
     "main": "lib/app.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc --sourcemap  --outFile dist/app.js lib/app.ts "
+        "build": "tsc --sourcemap  --outDir ./dist --rootDir ./lib",
+        "watch": "tsc -w --sourcemap  --outDir ./dist --rootDir ./lib"
     },
     "repository": {
         "type": "git",
@@ -25,6 +26,7 @@
         "source-map-loader": "^0.2.4",
         "ts-loader": "^5.3.3",
         "typescript": "^3.4.1",
-        "webpack": "^4.29.6"
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0"
     }
 }
