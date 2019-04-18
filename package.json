@@ -9,6 +9,7 @@
         "watch": "npx tsc -w",
         "dist-unminified": "npx browserify --debug src/app.js -o dist/app.js",
         "dist-minified": "npx browserify -p tinyify ./src/app.js -o ./dist/app.min.js",
+        "dist-unmd": "npx browserify -p tinyify -s tskit ./src/app.js -o ./dist/app.min.js",
         "format": "npx prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
         "test": "npx jest --config jestconfig.json",
         "prepare": "npm run build && npm run dist-unminified && npm run dist-minified",
