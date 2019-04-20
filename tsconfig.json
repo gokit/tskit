@@ -22,8 +22,4 @@
     "awesomeTypescriptLoaderOptions": {
         /* ... */
     },
-    "plugins": [
-        "tslint:recommended",
-        "tslint-config-prettier"
-    ]
 }
